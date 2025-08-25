@@ -1,0 +1,206 @@
+.columnSelectionPanel {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 15px 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  border: 1px solid #e9ecef;
+  
+  .selectionInfo {
+    text-align: center;
+    margin-bottom: 12px;
+    
+    .selectedCount {
+      color: #495057;
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 6px;
+      display: block;
+    }
+    
+    .selectionSubtitle {
+      color: #6c757d;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+  
+  .selectionActions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    
+    .btnAction {
+      background: #ffffff;
+      color: #495057;
+      border: 1px solid #dee2e6;
+      padding: 6px 14px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      min-width: 70px;
+      height: 32px;
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      
+      &:hover {
+        background: #f8f9fa;
+        border-color: #adb5bd;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+      
+      &:active {
+        transform: translateY(0);
+        background: #e9ecef;
+      }
+      
+      &.btnDelete {
+        background: #fff5f5;
+        border-color: #fed7d7;
+        color: #c53030;
+        
+        &:hover {
+          background: #fed7d7;
+          border-color: #feb2b2;
+        }
+      }
+      
+      &.btnMove {
+        background: #f0fff4;
+        border-color: #c6f6d5;
+        color: #2f855a;
+        
+        &:hover {
+          background: #c6f6d5;
+          border-color: #9ae6b4;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .columnSelectionPanel {
+    padding: 16px;
+    margin: 14px 0;
+    
+    .selectionInfo {
+      margin-bottom: 14px;
+      
+      .selectedCount {
+        font-size: 15px;
+      }
+      
+      .selectionSubtitle {
+        font-size: 12px;
+      }
+    }
+    
+    .selectionActions {
+      gap: 9px;
+      
+      .btnAction {
+        padding: 7px 15px;
+        font-size: 12px;
+        min-width: 75px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .columnSelectionPanel {
+    padding: 15px;
+    margin: 12px 0;
+    
+    .selectionInfo {
+      margin-bottom: 12px;
+      
+      .selectedCount {
+        font-size: 15px;
+      }
+      
+      .selectionSubtitle {
+        font-size: 12px;
+      }
+    }
+    
+    .selectionActions {
+      gap: 8px;
+      
+      .btnAction {
+        padding: 7px 14px;
+        font-size: 12px;
+        min-width: 70px;
+        height: 34px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .columnSelectionPanel {
+    padding: 12px;
+    margin: 10px 0;
+    
+    .selectionInfo {
+      margin-bottom: 10px;
+      
+      .selectedCount {
+        font-size: 14px;
+      }
+      
+      .selectionSubtitle {
+        font-size: 11px;
+      }
+    }
+    
+    .selectionActions {
+      gap: 6px;
+      
+      .btnAction {
+        padding: 6px 12px;
+        font-size: 11px;
+        min-width: 65px;
+        height: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .columnSelectionPanel {
+    padding: 10px;
+    margin: 8px 0;
+    
+    .selectionInfo {
+      margin-bottom: 8px;
+      
+      .selectedCount {
+        font-size: 13px;
+      }
+      
+      .selectionSubtitle {
+        font-size: 10px;
+      }
+    }
+    
+    .selectionActions {
+      gap: 5px;
+      
+      .btnAction {
+        padding: 5px 10px;
+        font-size: 10px;
+        min-width: 60px;
+        height: 30px;
+      }
+    }
+  }
+}

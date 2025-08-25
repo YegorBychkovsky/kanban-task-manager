@@ -1,0 +1,189 @@
+.sortSelector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.sortType {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  
+  label {
+    font-weight: 600;
+    color: #495057;
+    white-space: nowrap;
+  }
+}
+
+.sortSelect {
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: white;
+  font-size: 14px;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: #007bff;
+  }
+  
+  &:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
+}
+
+.sortOrder {
+  display: flex;
+  gap: 2px;
+}
+
+.orderBtn {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ced4da;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #6c757d;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    border-color: #007bff;
+    color: #007bff;
+    background: #f8f9fa;
+  }
+  
+  &.active {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border-color: #007bff;
+    color: white;
+  }
+}
+
+
+/* Планшеты и маленькие десктопы */
+@media (max-width: 1024px) {
+  .sortSelector {
+    gap: 10px;
+    padding: 7px 10px;
+    font-size: 13px;
+  }
+
+  .sortType {
+    gap: 5px;
+  }
+
+  .sortSelect {
+    padding: 3px 7px;
+    font-size: 13px;
+  }
+
+  .orderBtn {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+/* Планшеты */
+@media (max-width: 768px) {
+  .sortSelector {
+    gap: 8px;
+    padding: 6px 8px;
+    font-size: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .sortType {
+    gap: 4px;
+    
+    label {
+      font-size: 12px;
+    }
+  }
+
+  .sortSelect {
+    padding: 3px 6px;
+    font-size: 12px;
+  }
+
+  .orderBtn {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+}
+
+/* Мобильные устройства */
+@media (max-width: 480px) {
+  .sortSelector {
+    gap: 6px;
+    padding: 5px 6px;
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .sortType {
+    gap: 3px;
+    
+    label {
+      font-size: 11px;
+    }
+  }
+
+  .sortSelect {
+    padding: 2px 5px;
+    font-size: 11px;
+  }
+
+  .orderBtn {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+}
+
+/* Очень маленькие мобильные устройства */
+@media (max-width: 360px) {
+  .sortSelector {
+    gap: 5px;
+    padding: 4px 5px;
+    font-size: 10px;
+  }
+
+  .sortType {
+    gap: 2px;
+    
+    label {
+      font-size: 10px;
+    }
+  }
+
+  .sortSelect {
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+
+  .orderBtn {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+}

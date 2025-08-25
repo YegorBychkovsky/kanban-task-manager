@@ -1,0 +1,153 @@
+.searchContainer {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 500px;
+  padding: 18px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+
+  &::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+    transition: color 0.3s ease;
+  }
+
+  &:focus {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+  }
+
+  &:focus::placeholder {
+    color: #6c757d;
+  }
+}
+
+.searchResults {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.searchInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.searchResultsText {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.smartSearchIndicator {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.clearSearchBtn {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-left: auto;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+@media (max-width: 768px) {
+  .searchContainer {
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+
+  .searchInput {
+    max-width: 400px;
+    padding: 16px 22px;
+    font-size: 13px;
+  }
+
+  .searchResults {
+    padding: 10px 16px;
+  }
+
+  .searchResultsText {
+    font-size: 13px;
+  }
+
+  .smartSearchIndicator {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .searchContainer {
+    margin-bottom: 25px;
+    gap: 12px;
+  }
+
+  .searchInput {
+    max-width: 100%;
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+
+  .searchResults {
+    padding: 8px 14px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .searchResultsText {
+    font-size: 12px;
+  }
+
+  .smartSearchIndicator {
+    font-size: 10px;
+  }
+
+  .clearSearchBtn {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 0;
+  }
+}

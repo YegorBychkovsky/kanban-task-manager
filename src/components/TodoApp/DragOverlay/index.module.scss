@@ -1,0 +1,61 @@
+.dragOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.dragTaskOverlay {
+  background: linear-gradient(135deg, #2a5298 0%, #3a7bd5 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 25px rgba(42, 82, 152, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: rotate(2deg) scale(1.05);
+  animation: dragPulse 0.6s ease-in-out infinite alternate;
+}
+
+.dragColumnOverlay {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 12px 35px rgba(30, 60, 114, 0.4);
+  backdrop-filter: blur(15px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  transform: rotate(-1deg) scale(1.1);
+  animation: dragPulse 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes dragPulse {
+  0% {
+    transform: rotate(2deg) scale(1.05);
+    box-shadow: 0 8px 25px rgba(42, 82, 152, 0.3);
+  }
+  100% {
+    transform: rotate(2deg) scale(1.1);
+    box-shadow: 0 12px 35px rgba(42, 82, 152, 0.5);
+  }
+}
+
+.dragColumnOverlay {
+  @keyframes dragPulse {
+    0% {
+      transform: rotate(-1deg) scale(1.1);
+      box-shadow: 0 12px 35px rgba(30, 60, 114, 0.4);
+    }
+    100% {
+      transform: rotate(-1deg) scale(1.15);
+      box-shadow: 0 16px 40px rgba(30, 60, 114, 0.6);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.columnTasks {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  margin-bottom: 20px;
+  min-height: 0; 
+  padding-right: 5px; 
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,97 @@
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.loading h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+  color: white;
+}
+
+.loading p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 30px 0;
+  line-height: 1.6;
+}
+
+.btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    transform: translateY(-1px);
+  }
+
+  &.btnPrimary {
+    background: linear-gradient(135deg, #2a5298 0%, #3a7bd5 100%);
+    color: white;
+    box-shadow: 0 6px 20px rgba(42, 82, 152, 0.25);
+
+    &:hover {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      box-shadow: 0 12px 30px rgba(42, 82, 152, 0.35);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loading {
+    padding: 50px 20px;
+  }
+
+  .loading h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .loading p {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading {
+    padding: 40px 20px;
+  }
+
+  .loading h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .loading p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

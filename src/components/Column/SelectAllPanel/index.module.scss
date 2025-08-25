@@ -1,0 +1,90 @@
+.selectAllPanel {
+  text-align: center;
+  margin: 15px 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .btnSelectAll {
+    background: #3a7bd5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(58, 123, 213, 0.2);
+    min-width: 120px;
+    height: 38px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 6px;
+    
+    &:hover {
+      background: #2a5298;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(58, 123, 213, 0.3);
+    }
+    
+    &:active {
+      transform: translateY(0);
+      background: #1e3c72;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .selectAllPanel {
+    margin: 14px 0;
+    
+    .btnSelectAll {
+      padding: 9px 18px;
+      font-size: 13px;
+      min-width: 110px;
+      height: 38px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .selectAllPanel {
+    margin: 12px 0;
+    
+    .btnSelectAll {
+      padding: 8px 16px;
+      font-size: 12px;
+      min-width: 100px;
+      height: 36px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .selectAllPanel {
+    margin: 10px 0;
+    
+    .btnSelectAll {
+      padding: 7px 14px;
+      font-size: 11px;
+      min-width: 90px;
+      height: 34px;
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .selectAllPanel {
+    margin: 8px 0;
+    
+    .btnSelectAll {
+      padding: 6px 12px;
+      font-size: 10px;
+      min-width: 80px;
+      height: 32px;
+    }
+  }
+}

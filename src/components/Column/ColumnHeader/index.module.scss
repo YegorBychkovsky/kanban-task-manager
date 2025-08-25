@@ -1,0 +1,258 @@
+.columnHeader {
+  margin-bottom: 20px;
+  position: relative;
+  flex-shrink: 0;
+  cursor: default; 
+  user-select: none; 
+  min-height: 60px; 
+  padding: 15px 0; 
+  pointer-events: auto; 
+}
+
+.columnTitleDisplay {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.columnDragHandle {
+  cursor: grab;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  opacity: 0.7;
+  user-select: none; 
+  touch-action: none; 
+
+  &:hover {
+    opacity: 1;
+    background: rgba(102, 126, 234, 0.1);
+    transform: scale(1.05);
+  }
+
+  &:active {
+    cursor: grabbing;
+    transform: scale(1.02);
+  }
+}
+
+.dragHandleDots {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.dragHandleRow {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.dragHandleDot {
+  width: 4px;
+  height: 4px;
+  background: #6c757d;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.columnDragHandle:hover .dragHandleDot {
+  background: #3a7bd5;
+  transform: scale(1.1);
+}
+
+.columnDragHandle:active .dragHandleDot {
+  background: #2a5298;
+  transform: scale(0.95);
+}
+
+.columnTitle {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer; 
+  transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1); 
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  pointer-events: auto; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1); 
+    border-radius: 8px;
+  }
+
+  &:hover {
+    transform: translateY(-1px);
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.columnActions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.btnAddTaskSmall {
+  background: linear-gradient(135deg, #2a5298 0%, #3a7bd5 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(42, 82, 152, 0.25);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  min-width: 80px;
+  height: 32px;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #3a7bd5 0%, #2a5298 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(42, 82, 152, 0.35);
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1024px) {
+  .columnHeader {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .columnTitle {
+    font-size: 16px;
+  }
+
+  .columnDragHandle {
+    width: 28px;
+    height: 28px;
+  }
+
+  .dragHandleDot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .columnHeader {
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+  }
+
+  .columnTitle {
+    font-size: 15px;
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .columnDragHandle {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+  }
+
+  .dragHandleDot {
+    width: 3px;
+    height: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .columnHeader {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .columnTitle {
+    font-size: 14px;
+    min-width: 100px;
+  }
+
+  .columnDragHandle {
+    width: 24px;
+    height: 24px;
+  }
+
+  .dragHandleDot {
+    width: 2.5px;
+    height: 2.5px;
+  }
+}
+
+@media (max-width: 360px) {
+  .columnHeader {
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+
+  .columnTitle {
+    font-size: 13px;
+    min-width: 80px;
+  }
+
+  .columnDragHandle {
+    width: 22px;
+    height: 22px;
+  }
+
+  .dragHandleDot {
+    width: 2px;
+    height: 2px;
+  }
+}

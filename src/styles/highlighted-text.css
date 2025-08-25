@@ -1,0 +1,134 @@
+/* Highlighted Text Styles for Search Results */
+.highlighted-text {
+  background-color: #ffc107 !important; /* Darker yellow */
+  color: #000000 !important; /* Black text */
+  padding: 2px 4px !important; /* Increased padding */
+  border-radius: 3px !important; /* Slightly larger border-radius */
+  font-weight: 700 !important; /* Bolder font */
+  transition: all 0.2s ease !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2) !important; /* Added shadow */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.8) !important; /* Added text shadow */
+}
+
+.highlighted-text:hover {
+  background-color: #ff9800 !important; /* Darker yellow on hover */
+  transform: scale(1.05) !important; /* Increased scale on hover */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important; /* Enhanced shadow on hover */
+}
+
+/* Альтернативный вариант - более яркий и контрастный */
+.highlighted-text.enhanced {
+  background: linear-gradient(135deg, #ff5722 0%, #ff9800 100%) !important; /* Orange-red gradient */
+  color: #ffffff !important; /* White text */
+  padding: 3px 6px !important; /* More padding */
+  border-radius: 4px !important; /* Larger border-radius */
+  font-weight: 800 !important; /* Extra bold */
+  border: 2px solid #ffffff !important; /* White border */
+  box-shadow: 0 2px 8px rgba(255, 87, 34, 0.4) !important; /* Stronger shadow */
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8) !important; /* Stronger text shadow */
+}
+
+.highlighted-text.enhanced:hover {
+  background: linear-gradient(135deg, #e64a19 0%, #f57c00 100%) !important; /* Darker gradient on hover */
+  transform: scale(1.08) !important; /* More scale on hover */
+  box-shadow: 0 4px 12px rgba(255, 87, 34, 0.6) !important; /* Even stronger shadow on hover */
+}
+
+/* Специальные стили для выделенного текста в input полях */
+/* Webkit (Chrome, Safari, Edge) */
+input::selection,
+textarea::selection {
+  background-color: #3a7bd5 !important; /* Синий цвет как у кнопок */
+  color: #ffffff !important; /* Белый текст */
+  text-shadow: none !important; /* Убираем text-shadow для input */
+}
+
+/* Firefox */
+input::-moz-selection,
+textarea::-moz-selection {
+  background-color: #3a7bd5 !important; /* Для Firefox */
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Стили для выделенного текста в поисковом поле */
+.searchInput::selection {
+  background-color: #2a5298 !important; /* Темно-синий для лучшего контраста */
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+.searchInput::-moz-selection {
+  background-color: #2a5298 !important; /* Для Firefox */
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Дополнительные стили для всех input полей */
+input::selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+input::-moz-selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+textarea::selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+textarea::-moz-selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Дополнительные стили для всех браузеров */
+/* Универсальные стили выделения для input полей */
+input,
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"] {
+  /* Обеспечиваем хорошую видимость выделенного текста */
+}
+
+/* Стили для выделенного текста в любых input полях */
+input::selection,
+textarea::selection,
+input[type="text"]::selection,
+input[type="search"]::selection,
+input[type="email"]::selection,
+input[type="password"]::selection,
+input[type="number"]::selection,
+input[type="tel"]::selection,
+input[type="url"]::selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* Firefox версии для всех типов input */
+input::-moz-selection,
+textarea::-moz-selection,
+input[type="text"]::-moz-selection,
+input[type="search"]::-moz-selection,
+input[type="email"]::-moz-selection,
+input[type="password"]::-moz-selection,
+input[type="number"]::-moz-selection,
+input[type="tel"]::-moz-selection,
+input[type="url"]::-moz-selection {
+  background-color: #3a7bd5 !important;
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
