@@ -140,6 +140,9 @@
   display: flex;
   align-items: center; 
   justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  min-height: 32px;
 
   &::before {
     content: '';
@@ -165,6 +168,11 @@
   &:active {
     transform: translateY(0);
   }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.3);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -185,6 +193,13 @@
   .dragHandleDot {
     width: 4px;
     height: 4px;
+  }
+
+  .btnAddTaskSmall {
+    padding: 7px 14px;
+    font-size: 13px;
+    min-width: 75px;
+    height: 30px;
   }
 }
 
@@ -211,6 +226,14 @@
     width: 3px;
     height: 3px;
   }
+
+  .btnAddTaskSmall {
+    padding: 6px 12px;
+    font-size: 12px;
+    min-width: 70px;
+    height: 28px;
+    border-radius: 6px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -233,6 +256,14 @@
     width: 2.5px;
     height: 2.5px;
   }
+
+  .btnAddTaskSmall {
+    padding: 5px 10px;
+    font-size: 11px;
+    min-width: 65px;
+    height: 26px;
+    border-radius: 5px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -254,5 +285,43 @@
   .dragHandleDot {
     width: 2px;
     height: 2px;
+  }
+
+  .btnAddTaskSmall {
+    padding: 4px 8px;
+    font-size: 10px;
+    min-width: 60px;
+    height: 24px;
+    border-radius: 4px;
+  }
+}
+
+@media (max-width: 320px) {
+  .columnHeader {
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .columnTitle {
+    font-size: 12px;
+    min-width: 70px;
+  }
+
+  .columnDragHandle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .dragHandleDot {
+    width: 1.5px;
+    height: 1.5px;
+  }
+
+  .btnAddTaskSmall {
+    padding: 3px 6px;
+    font-size: 9px;
+    min-width: 55px;
+    height: 22px;
+    border-radius: 3px;
   }
 }

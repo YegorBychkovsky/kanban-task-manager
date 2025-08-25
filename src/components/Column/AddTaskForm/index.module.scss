@@ -91,6 +91,8 @@
   letter-spacing: 0.5px;
   pointer-events: auto; 
   z-index: 10; 
+  min-height: 44px;
+  min-width: 80px;
 
   &::before {
     content: '';
@@ -136,5 +138,177 @@
       background: linear-gradient(135deg, #5a6268 0%, #343a40 100%);
       box-shadow: 0 12px 35px rgba(108, 117, 125, 0.4);
     }
+  }
+}
+
+@media (max-width: 1024px) {
+  .addTaskForm {
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
+
+  .taskTitleInput,
+  .taskDescriptionInput {
+    padding: 14px 18px;
+    font-size: 13px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+  }
+
+  .taskDescriptionInput {
+    min-height: 70px;
+  }
+
+  .taskActions {
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    min-height: 40px;
+    min-width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .addTaskForm {
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+  }
+
+  .taskTitleInput,
+  .taskDescriptionInput {
+    padding: 12px 16px;
+    font-size: 12px;
+    margin-bottom: 14px;
+    border-radius: 8px;
+  }
+
+  .taskDescriptionInput {
+    min-height: 60px;
+  }
+
+  .taskActions {
+    gap: 10px;
+    margin-top: 16px;
+    flex-direction: column;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 12px;
+    min-height: 44px;
+    min-width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .addTaskForm {
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+
+  .taskTitleInput,
+  .taskDescriptionInput {
+    padding: 10px 14px;
+    font-size: 11px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+  }
+
+  .taskDescriptionInput {
+    min-height: 50px;
+  }
+
+  .taskActions {
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 11px;
+    min-height: 40px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .addTaskForm {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+
+  .taskTitleInput,
+  .taskDescriptionInput {
+    padding: 8px 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .taskDescriptionInput {
+    min-height: 40px;
+  }
+
+  .taskActions {
+    gap: 6px;
+    margin-top: 12px;
+  }
+
+  .btn {
+    padding: 8px 16px;
+    font-size: 10px;
+    min-height: 36px;
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 320px) {
+  .addTaskForm {
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  .taskTitleInput,
+  .taskDescriptionInput {
+    padding: 6px 10px;
+    font-size: 9px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+
+  .taskDescriptionInput {
+    min-height: 35px;
+  }
+
+  .taskActions {
+    gap: 4px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    padding: 6px 14px;
+    font-size: 9px;
+    min-height: 32px;
+    border-radius: 4px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .btn:hover {
+    transform: none !important;
+  }
+
+  .addTaskForm:hover::before {
+    left: -100% !important;
   }
 }
