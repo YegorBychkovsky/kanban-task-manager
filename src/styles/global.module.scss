@@ -456,6 +456,8 @@ p {
   appearance: none;
   border-radius: 0;
   -webkit-tap-highlight-color: transparent;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 :global(input[type="search"])::-webkit-search-decoration,
@@ -518,6 +520,14 @@ p {
   min-width: 44px;
 }
 
+:global(.prevent-expansion) {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   :global(body) {
     font-size: 14px;
@@ -526,6 +536,11 @@ p {
 
   :global(*) {
     -webkit-tap-highlight-color: transparent;
+  }
+
+  :global(input), :global(textarea) {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -538,6 +553,11 @@ p {
     min-height: 40px;
     min-width: 40px;
   }
+
+  :global(input), :global(textarea) {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 360px) {
@@ -549,6 +569,11 @@ p {
     min-height: 36px;
     min-width: 36px;
   }
+
+  :global(input), :global(textarea) {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 @media (max-width: 320px) {
@@ -559,6 +584,11 @@ p {
   :global(.touch-friendly) {
     min-height: 32px;
     min-width: 32px;
+  }
+
+  :global(input), :global(textarea) {
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 

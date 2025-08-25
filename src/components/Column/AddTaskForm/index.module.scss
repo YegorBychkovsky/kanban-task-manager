@@ -10,6 +10,10 @@
   flex-shrink: 0;
   pointer-events: auto; 
   z-index: 10; 
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  min-width: 0;
 
   &::before {
     content: '';
@@ -31,6 +35,8 @@
   display: flex;
   gap: 15px;
   margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .taskTitleInput,
@@ -48,6 +54,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   pointer-events: auto; 
   z-index: 10; 
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
 
   &:focus {
     border-color: #3a7bd5;
@@ -93,6 +102,8 @@
   z-index: 10; 
   min-height: 44px;
   min-width: 80px;
+  box-sizing: border-box;
+  flex-shrink: 0;
 
   &::before {
     content: '';
@@ -146,6 +157,9 @@
     padding: 18px;
     border-radius: 14px;
     margin-bottom: 18px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskTitleInput,
@@ -154,6 +168,9 @@
     font-size: 13px;
     margin-bottom: 16px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskDescriptionInput {
@@ -163,6 +180,8 @@
   .taskActions {
     gap: 12px;
     margin-top: 18px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -170,6 +189,7 @@
     font-size: 13px;
     min-height: 40px;
     min-width: 70px;
+    box-sizing: border-box;
   }
 }
 
@@ -178,6 +198,9 @@
     padding: 16px;
     border-radius: 12px;
     margin-bottom: 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskTitleInput,
@@ -186,6 +209,9 @@
     font-size: 12px;
     margin-bottom: 14px;
     border-radius: 8px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskDescriptionInput {
@@ -196,6 +222,8 @@
     gap: 10px;
     margin-top: 16px;
     flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -204,6 +232,8 @@
     min-height: 44px;
     min-width: 100%;
     justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -212,6 +242,9 @@
     padding: 14px;
     border-radius: 10px;
     margin-bottom: 14px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskTitleInput,
@@ -220,6 +253,9 @@
     font-size: 11px;
     margin-bottom: 12px;
     border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskDescriptionInput {
@@ -229,6 +265,8 @@
   .taskActions {
     gap: 8px;
     margin-top: 14px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -236,6 +274,8 @@
     font-size: 11px;
     min-height: 40px;
     border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -244,6 +284,9 @@
     padding: 12px;
     border-radius: 8px;
     margin-bottom: 12px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskTitleInput,
@@ -252,6 +295,9 @@
     font-size: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskDescriptionInput {
@@ -261,6 +307,8 @@
   .taskActions {
     gap: 6px;
     margin-top: 12px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -268,6 +316,8 @@
     font-size: 10px;
     min-height: 36px;
     border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -276,6 +326,9 @@
     padding: 10px;
     border-radius: 6px;
     margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskTitleInput,
@@ -284,6 +337,9 @@
     font-size: 9px;
     margin-bottom: 8px;
     border-radius: 4px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .taskDescriptionInput {
@@ -293,6 +349,8 @@
   .taskActions {
     gap: 4px;
     margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
@@ -300,6 +358,8 @@
     font-size: 9px;
     min-height: 32px;
     border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
