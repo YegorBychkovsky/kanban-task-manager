@@ -92,6 +92,18 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .searchContainer {
+    margin-bottom: 35px;
+    gap: 18px;
+  }
+
+  .searchInput {
+    max-width: 450px;
+    padding: 16px 22px;
+  }
+}
+
 @media (max-width: 768px) {
   .searchContainer {
     margin-bottom: 30px;
@@ -102,6 +114,7 @@
     max-width: 400px;
     padding: 16px 22px;
     font-size: 13px;
+    border-radius: 20px;
   }
 
   .searchResults {
@@ -127,6 +140,7 @@
     max-width: 100%;
     padding: 14px 20px;
     font-size: 12px;
+    border-radius: 18px;
   }
 
   .searchResults {
@@ -149,5 +163,36 @@
     height: 20px;
     font-size: 12px;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .searchContainer {
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+
+  .searchInput {
+    padding: 12px 18px;
+    font-size: 11px;
+    border-radius: 16px;
+  }
+
+  .searchResults {
+    padding: 6px 12px;
+  }
+
+  .searchResultsText {
+    font-size: 11px;
+  }
+
+  .smartSearchIndicator {
+    font-size: 9px;
+  }
+
+  .clearSearchBtn {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
   }
 }

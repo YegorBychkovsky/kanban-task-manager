@@ -108,11 +108,42 @@
   .columnsContainer {
     gap: 12px;
     padding: 12px 0;
+    min-height: 300px;
   }
 
   .addColumnBtn {
-    width: 220px;
-    height: 90px;
-    font-size: 32px;
+    width: 200px;
+    height: 80px;
+    font-size: 28px;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .columnsContainer {
+    gap: 10px;
+    padding: 10px 0;
+    min-height: 250px;
+  }
+
+  .addColumnBtn {
+    width: 180px;
+    height: 70px;
+    font-size: 24px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .columnsContainer {
+    gap: 8px;
+    padding: 8px 0;
+  }
+
+  .addColumnBtn {
+    width: 160px;
+    height: 60px;
+    font-size: 20px;
+    border-radius: 8px;
   }
 }
