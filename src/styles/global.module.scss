@@ -422,6 +422,7 @@ p {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :global(body) {
@@ -431,6 +432,7 @@ p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 :global(#root) {
@@ -442,6 +444,10 @@ p {
 :global(button) {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 :global(input), :global(textarea) {
@@ -449,6 +455,7 @@ p {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :global(input[type="search"])::-webkit-search-decoration,
@@ -472,6 +479,7 @@ p {
 :global(a) {
   text-decoration: none;
   color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 :global(ul), :global(ol) {
@@ -500,9 +508,24 @@ p {
   outline: none;
 }
 
+:global(.mobile-optimized) {
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+}
+
+:global(.touch-friendly) {
+  min-height: 44px;
+  min-width: 44px;
+}
+
 @media (max-width: 768px) {
   :global(body) {
     font-size: 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :global(*) {
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -510,11 +533,46 @@ p {
   :global(body) {
     font-size: 13px;
   }
+
+  :global(.touch-friendly) {
+    min-height: 40px;
+    min-width: 40px;
+  }
 }
 
 @media (max-width: 360px) {
   :global(body) {
     font-size: 12px;
+  }
+
+  :global(.touch-friendly) {
+    min-height: 36px;
+    min-width: 36px;
+  }
+}
+
+@media (max-width: 320px) {
+  :global(body) {
+    font-size: 11px;
+  }
+
+  :global(.touch-friendly) {
+    min-height: 32px;
+    min-width: 32px;
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  :global(button:hover) {
+    transform: none !important;
+  }
+
+  :global(.taskItem:hover) {
+    transform: none !important;
+  }
+
+  :global(.column:hover) {
+    transform: none !important;
   }
 }
 

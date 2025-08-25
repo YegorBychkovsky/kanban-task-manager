@@ -418,13 +418,21 @@
 @media (max-width: 1024px) {
   .taskItem {
     padding: 22px;
-    border-radius: 14px;
     margin-bottom: 18px;
+    border-radius: 14px;
   }
 
   .taskHeader {
-    gap: 14px;
+    gap: 13px;
     margin-bottom: 16px;
+  }
+
+  .taskHeaderTop {
+    gap: 13px;
+  }
+
+  .taskHeaderBottom {
+    gap: 12px;
   }
 
   .taskTitle {
@@ -433,32 +441,25 @@
 
   .taskDescription {
     font-size: 13px;
-    margin-bottom: 14px;
+    line-height: 1.5;
   }
 
-  .btnEdit {
-    min-width: 55px;
-    height: 34px;
-    font-size: 13px;
+  .taskActions {
+    gap: 10px;
   }
 
-  .taskStatusBtn {
-    min-width: 70px;
-    height: 34px;
-    font-size: 10px;
-  }
-
-  .taskCheckbox {
-    width: 18px;
-    height: 18px;
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
   .taskItem {
     padding: 20px;
+    margin-bottom: 16px;
     border-radius: 12px;
-    margin-bottom: 15px;
+    min-height: 180px;
   }
 
   .taskHeader {
@@ -466,7 +467,10 @@
     margin-bottom: 15px;
   }
 
-  .taskHeaderTop,
+  .taskHeaderTop {
+    gap: 12px;
+  }
+
   .taskHeaderBottom {
     gap: 10px;
   }
@@ -477,54 +481,30 @@
 
   .taskDescription {
     font-size: 12px;
-    margin-bottom: 12px;
-    min-height: 18px;
+    line-height: 1.4;
   }
 
-  .btnEdit {
-    min-width: 50px;
-    height: 32px;
-    font-size: 12px;
+  .taskActions {
+    gap: 8px;
   }
 
-  .taskStatusBtn {
-    min-width: 65px;
-    height: 32px;
-    font-size: 9px;
-    letter-spacing: 0.6px;
+  .btn {
+    padding: 7px 14px;
+    font-size: 11px;
   }
 
   .taskCheckbox {
-    width: 16px;
-    height: 16px;
-    transform: scale(1.1);
-  }
-
-  .taskDragHandle {
-    top: 6px;
-    left: 6px;
-    padding: 5px;
-  }
-
-  .dragHandleDot {
-    width: 2.5px;
-    height: 2.5px;
-  }
-
-  .taskFooter {
-    margin-top: 12px;
-  }
-
-  .taskDate {
-    font-size: 12px;
+    width: 18px;
+    height: 18px;
   }
 }
 
 @media (max-width: 480px) {
   .taskItem {
-    padding: 18px;
+    padding: 16px;
+    margin-bottom: 14px;
     border-radius: 10px;
-    margin-bottom: 12px;
+    min-height: 160px;
   }
 
   .taskHeader {
@@ -532,7 +512,10 @@
     margin-bottom: 12px;
   }
 
-  .taskHeaderTop,
+  .taskHeaderTop {
+    gap: 10px;
+  }
+
   .taskHeaderBottom {
     gap: 8px;
   }
@@ -543,54 +526,30 @@
 
   .taskDescription {
     font-size: 11px;
-    margin-bottom: 10px;
-    min-height: 16px;
+    line-height: 1.3;
   }
 
-  .btnEdit {
-    min-width: 45px;
-    height: 30px;
-    font-size: 11px;
+  .taskActions {
+    gap: 6px;
   }
 
-  .taskStatusBtn {
-    min-width: 60px;
-    height: 30px;
-    font-size: 8px;
-    letter-spacing: 0.5px;
+  .btn {
+    padding: 6px 12px;
+    font-size: 10px;
   }
 
   .taskCheckbox {
-    width: 15px;
-    height: 15px;
-    transform: scale(1.0);
-  }
-
-  .taskDragHandle {
-    top: 5px;
-    left: 5px;
-    padding: 4px;
-  }
-
-  .dragHandleDot {
-    width: 2px;
-    height: 2px;
-  }
-
-  .taskFooter {
-    margin-top: 10px;
-  }
-
-  .taskDate {
-    font-size: 11px;
+    width: 16px;
+    height: 16px;
   }
 }
 
 @media (max-width: 360px) {
   .taskItem {
-    padding: 16px;
+    padding: 14px;
+    margin-bottom: 12px;
     border-radius: 8px;
-    margin-bottom: 10px;
+    min-height: 140px;
   }
 
   .taskHeader {
@@ -598,7 +557,10 @@
     margin-bottom: 10px;
   }
 
-  .taskHeaderTop,
+  .taskHeaderTop {
+    gap: 8px;
+  }
+
   .taskHeaderBottom {
     gap: 6px;
   }
@@ -609,38 +571,66 @@
 
   .taskDescription {
     font-size: 10px;
-    margin-bottom: 8px;
-    min-height: 14px;
+    line-height: 1.2;
   }
 
-  .btnEdit {
-    min-width: 40px;
-    height: 28px;
-    font-size: 10px;
+  .taskActions {
+    gap: 5px;
   }
 
-  .taskStatusBtn {
-    min-width: 55px;
-    height: 28px;
-    font-size: 7px;
-    letter-spacing: 0.4px;
+  .btn {
+    padding: 5px 10px;
+    font-size: 9px;
   }
 
   .taskCheckbox {
     width: 14px;
     height: 14px;
-    transform: scale(0.9);
+  }
+}
+
+@media (max-width: 320px) {
+  .taskItem {
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    min-height: 120px;
   }
 
-  .taskDragHandle {
-    top: 4px;
-    left: 4px;
-    padding: 3px;
+  .taskHeader {
+    gap: 6px;
+    margin-bottom: 8px;
   }
 
-  .dragHandleDot {
-    width: 1.5px;
-    height: 1.5px;
+  .taskHeaderTop {
+    gap: 6px;
+  }
+
+  .taskHeaderBottom {
+    gap: 4px;
+  }
+
+  .taskTitle {
+    font-size: 11px;
+  }
+
+  .taskDescription {
+    font-size: 9px;
+    line-height: 1.1;
+  }
+
+  .taskActions {
+    gap: 4px;
+  }
+
+  .btn {
+    padding: 4px 8px;
+    font-size: 8px;
+  }
+
+  .taskCheckbox {
+    width: 12px;
+    height: 12px;
   }
 }
 
