@@ -1,5 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import './styles/reset.css'
 import './styles/global.module.scss'
 import './styles/highlighted-text.css'
 import App from './App.tsx'
