@@ -35,7 +35,6 @@
 }
 
 
-/* Планшеты и маленькие десктопы */
 @media (max-width: 1024px) {
   .tooltip {
     max-width: 280px;
@@ -47,7 +46,6 @@
   }
 }
 
-/* Планшеты */
 @media (max-width: 768px) {
   .tooltip {
     max-width: 250px;
@@ -60,7 +58,6 @@
   }
 }
 
-/* Мобильные устройства */
 @media (max-width: 480px) {
   .tooltip {
     max-width: 200px;
@@ -73,20 +70,6 @@
   }
 }
 
-/* Очень маленькие мобильные устройства */
-@media (max-width: 360px) {
-  .tooltip {
-    max-width: 180px;
-  }
-  
-  .tooltipContent {
-    padding: 7px 10px;
-    font-size: 11px;
-    border-radius: 5px;
-  }
-}
-
-/* Ландшафтная ориентация на мобильных */
 @media (max-height: 500px) and (orientation: landscape) {
   .tooltip {
     max-width: 220px;

@@ -175,32 +175,3 @@
   }
 }
 
-@media (max-width: 360px) {
-  .columnSelectionPanel {
-    padding: 10px;
-    margin: 8px 0;
-    
-    .selectionInfo {
-      margin-bottom: 8px;
-      
-      .selectedCount {
-        font-size: 13px;
-      }
-      
-      .selectionSubtitle {
-        font-size: 10px;
-      }
-    }
-    
-    .selectionActions {
-      gap: 5px;
-      
-      .btnAction {
-        padding: 5px 10px;
-        font-size: 10px;
-        min-width: 60px;
-        height: 30px;
-      }
-    }
-  }
-}

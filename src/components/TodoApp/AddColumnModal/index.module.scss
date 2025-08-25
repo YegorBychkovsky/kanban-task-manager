@@ -206,31 +206,3 @@
     min-width: 100%;
   }
 }
-
-@media (max-width: 360px) {
-  .modalContent {
-    padding: 20px;
-    border-radius: 12px;
-    margin: 8px;
-  }
-
-  .modalTitle {
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-
-  .modalInput {
-    padding: 12px 16px;
-    font-size: 13px;
-    margin-bottom: 15px;
-  }
-
-  .modalActions {
-    gap: 8px;
-  }
-
-  .btn {
-    padding: 10px 18px;
-    font-size: 12px;
-  }
-}

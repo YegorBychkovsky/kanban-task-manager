@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import type { Task } from '../types';
 import { formatDate } from '../utils/helpers';
 import { Tooltip, HighlightedText, DeleteButton } from './ui';
-import styles from './TaskItem.module.scss';
+import styles from './TaskItem/index.module.scss';
 import { useSortable } from '@dnd-kit/sortable';
 import { CSS } from '@dnd-kit/utilities';
 

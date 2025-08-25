@@ -266,36 +266,6 @@
   }
 }
 
-@media (max-width: 360px) {
-  .columnHeader {
-    gap: 6px;
-    margin-bottom: 12px;
-  }
-
-  .columnTitle {
-    font-size: 13px;
-    min-width: 80px;
-  }
-
-  .columnDragHandle {
-    width: 22px;
-    height: 22px;
-  }
-
-  .dragHandleDot {
-    width: 2px;
-    height: 2px;
-  }
-
-  .btnAddTaskSmall {
-    padding: 4px 8px;
-    font-size: 10px;
-    min-width: 60px;
-    height: 24px;
-    border-radius: 4px;
-  }
-}
-
 @media (max-width: 320px) {
   .columnHeader {
     gap: 4px;

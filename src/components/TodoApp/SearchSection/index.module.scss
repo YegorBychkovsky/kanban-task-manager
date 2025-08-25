@@ -164,34 +164,3 @@
     margin-left: 0;
   }
 }
-
-@media (max-width: 360px) {
-  .searchContainer {
-    margin-bottom: 20px;
-    gap: 10px;
-  }
-
-  .searchInput {
-    padding: 12px 18px;
-    font-size: 11px;
-    border-radius: 16px;
-  }
-
-  .searchResults {
-    padding: 6px 12px;
-  }
-
-  .searchResultsText {
-    font-size: 11px;
-  }
-
-  .smartSearchIndicator {
-    font-size: 9px;
-  }
-
-  .clearSearchBtn {
-    width: 18px;
-    height: 18px;
-    font-size: 11px;
-  }
-}

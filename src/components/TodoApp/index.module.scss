@@ -75,26 +75,6 @@
   }
 }
 
-@media (max-width: 360px) {
-  .todoApp {
-    padding: 12px 8px;
-  }
-
-  .loading {
-    padding: 35px 12px;
-  }
-
-  .loading h2 {
-    font-size: 18px;
-    margin-bottom: 8px;
-  }
-
-  .loading p {
-    font-size: 13px;
-    margin-bottom: 18px;
-  }
-}
-
 @media (max-height: 600px) {
   .todoApp {
     padding: 15px 10px;

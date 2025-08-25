@@ -217,35 +217,3 @@
     }
   }
 }
-
-@media (max-width: 360px) {
-  .sizeSmall {
-    width: 24px;
-    height: 24px;
-    padding: 2px;
-    
-    .icon {
-      font-size: 14px;
-    }
-  }
-  
-  .sizeMedium {
-    width: 32px;
-    height: 32px;
-    padding: 4px;
-    
-    .icon {
-      font-size: 18px;
-    }
-  }
-  
-  .sizeLarge {
-    width: 40px;
-    height: 40px;
-    padding: 6px;
-    
-    .icon {
-      font-size: 22px;
-    }
-  }
-}

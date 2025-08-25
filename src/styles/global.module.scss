@@ -560,38 +560,6 @@ p {
   }
 }
 
-@media (max-width: 360px) {
-  :global(body) {
-    font-size: 12px;
-  }
-
-  :global(.touch-friendly) {
-    min-height: 36px;
-    min-width: 36px;
-  }
-
-  :global(input), :global(textarea) {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 320px) {
-  :global(body) {
-    font-size: 11px;
-  }
-
-  :global(.touch-friendly) {
-    min-height: 32px;
-    min-width: 32px;
-  }
-
-  :global(input), :global(textarea) {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-}
-
 @media (hover: none) and (pointer: coarse) {
   :global(button:hover) {
     transform: none !important;

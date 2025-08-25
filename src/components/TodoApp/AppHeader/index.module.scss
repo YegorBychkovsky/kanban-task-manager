@@ -100,25 +100,3 @@
     letter-spacing: 0.3px;
   }
 }
-
-@media (max-width: 360px) {
-  .appHeader {
-    margin-bottom: 20px;
-  }
-
-  .appTitle {
-    font-size: 24px;
-    margin-bottom: 10px;
-
-    &::after {
-      width: 60px;
-      height: 2px;
-      bottom: -5px;
-    }
-  }
-
-  .appSubtitle {
-    font-size: 11px;
-    letter-spacing: 0.2px;
-  }
-}

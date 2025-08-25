@@ -544,51 +544,6 @@
   }
 }
 
-@media (max-width: 360px) {
-  .taskItem {
-    padding: 14px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    min-height: 140px;
-  }
-
-  .taskHeader {
-    gap: 8px;
-    margin-bottom: 10px;
-  }
-
-  .taskHeaderTop {
-    gap: 8px;
-  }
-
-  .taskHeaderBottom {
-    gap: 6px;
-  }
-
-  .taskTitle {
-    font-size: 12px;
-  }
-
-  .taskDescription {
-    font-size: 10px;
-    line-height: 1.2;
-  }
-
-  .taskActions {
-    gap: 5px;
-  }
-
-  .btn {
-    padding: 5px 10px;
-    font-size: 9px;
-  }
-
-  .taskCheckbox {
-    width: 14px;
-    height: 14px;
-  }
-}
-
 @media (max-width: 320px) {
   .taskItem {
     padding: 12px;
